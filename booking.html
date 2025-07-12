@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqua Adventures</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleb.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Aqua Adventures</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a onclick="window.location.href='/booking'">Rides</a></li>
+          <li><a onclick="window.location.href='/tickets'">Tickets</a></li>
+          <li><a onclick="window.location.href='/contact_us'">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="featured">
+      <h2 class="animated-text">
+        <span class="word"><span>P</span><span>o</span><span>p</span><span>u</span><span>l</span><span>a</span><span>r</span></span>
+        <span class="word"> <span>R</span><span>i</span><span>d</span><span>e</span><span>s</span> </span>
+      </h2>
+  </section>
+  
+  <div class="cards">
+        <div class="card">
+          <a href="{{ url_for('ride1') }}">
+
+          <img
+            src="https://th.bing.com/th/id/OIP.9OZkwWGbVVB4EhKxats1CwHaE8?rs=1&pid=ImgDetMain"
+            alt="Roller  Coaster"
+          />
+          <h3>Roller Coaster</h3>
+          <p>Thrilling rides for all ages!</p></a>
+        </div>
+        <div class="card">
+          <a href="{{ url_for('ride2') }}">
+            <img
+              src="https://th.bing.com/th/id/OIP.6x59aWl_xVOZe4aNas4vgQHaGv?rs=1&pid=ImgDetMain"
+              alt="Ferris Wheel"
+            />
+            <h3>Ferris Wheel</h3>
+            <p>Enjoy the view of the park.</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="{{ url_for('ride3') }}">
+          <img
+            src="https://th.bing.com/th/id/OIP.BMV3ePec6ZE54v4Pwq2eywHaHa?rs=1&pid=ImgDetMain"
+            alt="Water Slide"
+          />
+          <h3>Water Slide</h3>
+          <p>Fun for the entire family!</p></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Your Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

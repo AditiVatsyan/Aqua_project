@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Sports Ride Booking</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- <h1>Welcome to the wonderland</h1> -->
+        <h1>Book Your ferris wheel Ride</h1>
+        <form id="bookingForm" method="POST" action="/booking">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="ride">Select Ride:</label>
+            <select id="ride" name="ride" required>
+                <option value="Traditional Ferris Wheels">Traditional Ferris Wheels</option>
+                <option value="Observation Wheels">Observation Wheel</option>
+                <option value="Portable Ferris Wheels">Portable Ferris Wheels</option>
+                <option value="Double Ferris Wheels">Double Ferris Wheels</option>
+            </select>
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Amusement Park - Discover the best rides and attractions for family fun!">
+    <meta name="keywords" content="amusement park, rides, family fun, tickets, booking">
+    <title>Aqua Adventures</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleb.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aqua Adventures</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a onclick="window.location.href='/booking'">Rides</a></li>
+                <li><a onclick="window.location.href='/tickets'">Tickets</a></li>
+                <li><a onclick="window.location.href='/contact_us'">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h2>Your Adventure Awaits</h2>
+            <p>Discover the best rides and attractions for family fun!</p>
+            <button onclick="window.location.href='/booking'" aria-label="Book a ride now">Book Now</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Aqua Adventures. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

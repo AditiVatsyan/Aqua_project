@@ -1,0 +1,86 @@
+/* General Styling */
+body {
+    background: url('roller\ coaster.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Blur Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darker for contrast */
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+/* Form Container - Glassmorphism */
+.container {
+    width: 40%;
+    margin: 5% auto;
+    background: rgba(255, 255, 255, 0.15); /* Subtle White Transparency */
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+h2 {
+    text-align: center;
+    color: #ffcc00; /* Gold Accent */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Placeholder Text Color */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #ff4c4c, #ff6600); /* Gradient Red-Orange */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(45deg, #ff6600, #ff4c4c);
+    transform: scale(1.05);
+}
+
+

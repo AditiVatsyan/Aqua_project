@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleb.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+     <header>
+        <div class="logo">
+          <h1>FunCity</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a onclick="window.location.href='/'">Home</a></li>
+            <li><a onclick="window.location.href='/booking'">Rides</a></li>
+            <li><a onclick="window.location.href='/tickets'">Tickets</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+       <div class="Container">
+         <h1 class="section-heading">Fun City Rides Ticket and Prices</h1>
+         <div class="Card_wrapper">
+            <div class="Card__Block">
+                <div class="Main_card">
+                    <h3 class="pricing-title" style="background: #ae8ff1;">Basic</h3>
+                    <div class="card-body">
+                        <ul class="pl-0">
+                            <li>Load for 1100 get 11 plays</li>
+                            <li>Load for 1600 get 18 plays</li>
+                            <li>Load for 2200 get 26 plays</li>
+                            <li>Load for 2700 get 35 plays</li>
+                            <li>Load for 3700 get 55 plays</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Main_card">
+                    <h3 class="pricing-title" style="background: #4d3a75;">VIP <svg class="svg-inline--fa fa-gem fa-w-18 ml-2" aria-hidden="true" focusable="false" data-prefix="far" data-icon="gem" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M464 0H112c-4 0-7.8 2-10 5.4L2 152.6c-2.9 4.4-2.6 10.2.7 14.2l276 340.8c4.8 5.9 13.8 5.9 18.6 0l276-340.8c3.3-4.1 3.6-9.8.7-14.2L474.1 5.4C471.8 2 468.1 0 464 0zm-19.3 48l63.3 96h-68.4l-51.7-96h56.8zm-202.1 0h90.7l51.7 96H191l51.6-96zm-111.3 0h56.8l-51.7 96H68l63.3-96zm-43 144h51.4L208 352 88.3 192zm102.9 0h193.6L288 435.3 191.2 192zM368 352l68.2-160h51.4L368 352z"></path></svg><!-- <i class="far fa-gem ml-2"></i> --></h3>
+                    <div class="card-body">
+                        <ul class="pl-0">
+                            <li><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> Load for 10000 get 200 plays</li>
+                            <li><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> A Toy Free </li>
+                            <li><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> 25% Off on Birthday Party</li>
+                            <li><svg class="svg-inline--fa fa-check fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg><!-- <i class="fas fa-check"></i> --> Early Access to new offers and product launch</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Main_card">
+                    <h3 class="pricing-title" style="background: #bd4699;">Play Area Membership</h3>
+                    <div class="card-body">
+                        <ul class="pl-0">
+                            <li>One Month INR 999</li>
+                            <li>Three Month INR 1499</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <a href="/" class="butonCt">Back to Home</a>
+    </div>
+</body>
+</html>

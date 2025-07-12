@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='confirmation.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+        }
+
+        .social-icons img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="checkmark">
+                ✓
+            </div>
+        </div>
+        <h1>Booking Confirmed!</h1>
+        <p>Thank you!for booking your water sports ride with us. We’re excited to have you on board!</p>
+        
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> 8351963912</p>
+            <p><strong>Email:</strong> aditisharma8351@gmail.com</p>
+            <p><strong>Follow us on:</strong></p>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://facebook.com/watersports" target="_blank">
+                        <img src="{{ url_for('static', filename='facebook-logo.svg') }}" alt="Facebook Logo" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/watersports" target="_blank">
+                        <img src="{{ url_for('static', filename='instagram-logo.svg') }}" alt="Instagram Logo" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/watersports" target="_blank">
+                        <img src="{{ url_for('static', filename='twitter-logo.svg') }}" alt="Twitter Logo" width="30">
+                    </a>
+                </li>
+            </ul>
+            <button onclick="location.href='/'">Back to Home</button>
+        </div>
+
+    </div>
+</body>
+</html>

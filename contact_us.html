@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleb.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <style>
+       /* General Reset */
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #dff6f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #008fa1;
+            color: white;
+            padding: 15px 20px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        h4 {
+            text-align: center;
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        /* Container for Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            width: 280px; /* Adjusted width for rectangle shape */
+            height: 380px; /* Adjusted height */
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card:hover {
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px; /* Rectangular shape */
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #e91e63;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #e91e63;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Aqua Adventures</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a onclick="window.location.href='/'">Home</a></li>
+                <li><a onclick="window.location.href='/booking'">Rides</a></li>
+                <li><a onclick="window.location.href='/tickets'">Tickets</a></li>
+                <li><a onclick="window.location.href='/contact_us'">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>🎡 Fun Awaits – Let’s Connect!</h2>
+        <h3>📩 Reach out to us for a magical experience at FunCity!</h3>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='priyanka.jpeg') }}" alt="Miss. Priyanka Dhiman">
+            <h3>Miss. Priyanka Dhiman</h3>
+            <p><strong>Email:</strong> priyankacse0@gmail.com</p>
+            <p><strong>Contact:</strong> 98828-82316</p>
+        </div>
+        
+        <div class="card">
+            <img src="{{ url_for('static', filename='aditi.jpeg') }}" alt="Aditi Sharma">
+            <h3>Aditi Sharma</h3>
+            <p>Backend Developer</p>
+            <p><strong>Email:</strong> aditisharma8351@gmail.com</p>
+            <p><strong>Contact:</strong> 8351963912</p>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='abhi.jpeg') }}" alt="Abhishek Sharma">
+            <h3>Abhishek Sharma</h3>
+            <p>Frontend Developer</p>
+            <p><strong>Email:</strong> abhis699675@gmail.com</p>
+            <p><strong>Contact:</strong> 7876630851</p>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='ashish.jpeg') }}" alt="Ashish Thakur">
+            <h3>Ashish Thakur</h3>
+            <p>UI/UX Developer</p>
+            <p><strong>Email:</strong> at6222903@gmail.com</p>
+            <p><strong>Contact:</strong> 7018646261</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background: url('water\ sports\ image.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: rgba(173, 231, 231, 0.514); 
+    /* Optional: adds transparency for readability */
+    padding: 0px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #00796b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004d40;
+}
